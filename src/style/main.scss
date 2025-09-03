@@ -1,10 +1,24 @@
 @use 'variaveis';
 @use '_hero';
+<<<<<<< HEAD
 @use '_shows.scss';
 
 @font-face {
     font-family: Avenir;
     src: url(../../src/fonts/Avenir-Bold.woff2);
+=======
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir-Bold;
+    src: url(../../fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+>>>>>>> a983c2a24836353e99327337c52ce4ff54d6b3d0
 }
 
 @mixin text($fontSize: 16px) {
@@ -23,11 +37,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
     font-family: Avenir, sans-serif;
+=======
+>>>>>>> a983c2a24836353e99327337c52ce4ff54d6b3d0
 }
 
 body {
     background-color: variaveis.$corFundo;
+<<<<<<< HEAD
+=======
+    font-family: Avenir, sans-serif
+>>>>>>> a983c2a24836353e99327337c52ce4ff54d6b3d0
 }
 
 .text--big {
