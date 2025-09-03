@@ -1,5 +1,11 @@
 @use 'variaveis';
 @use '_hero';
+@use '_shows.scss';
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../src/fonts/Avenir-Bold.woff2);
+}
 
 @mixin text($fontSize: 16px) {
     font-size: $fontSize;
@@ -17,6 +23,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Avenir, sans-serif;
 }
 
 body {
