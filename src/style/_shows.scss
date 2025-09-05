@@ -1,6 +1,7 @@
 @use '_variaveis';
 
 .shows {
+
     padding: 2vw 5.6vw;
     &__list {
         margin-top: 44px;
@@ -14,12 +15,20 @@
             img {
                 max-width: 100%;
                 border-radius: 4px;
+                cursor: pointer;
+            }
+            img:hover {
+                transform: translate(0, -10px);
+                transition: ease-in-out 0.5s;
             }
         }
     }
     &__tabs {
         display: flex;
         justify-content: center;
+        button {
+            cursor: pointer;
+        }
         &__button {
             background: none;
             font-size: 20px;

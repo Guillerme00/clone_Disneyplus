@@ -1,24 +1,11 @@
 @use 'variaveis';
 @use '_hero';
-<<<<<<< HEAD
 @use '_shows.scss';
+@use '_plans.scss';
 
 @font-face {
     font-family: Avenir;
     src: url(../../src/fonts/Avenir-Bold.woff2);
-=======
-
-@font-face {
-    font-family: Avenir;
-    src: url(../../fonts/Avenir-Regular.woff2);
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: Avenir-Bold;
-    src: url(../../fonts/Avenir-Bold.woff2);
-    font-weight: 700;
->>>>>>> a983c2a24836353e99327337c52ce4ff54d6b3d0
 }
 
 @mixin text($fontSize: 16px) {
@@ -37,18 +24,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-<<<<<<< HEAD
     font-family: Avenir, sans-serif;
-=======
->>>>>>> a983c2a24836353e99327337c52ce4ff54d6b3d0
 }
 
 body {
     background-color: variaveis.$corFundo;
-<<<<<<< HEAD
-=======
-    font-family: Avenir, sans-serif
->>>>>>> a983c2a24836353e99327337c52ce4ff54d6b3d0
 }
 
 .text--big {
@@ -79,4 +59,24 @@ body {
     @include text(18px);
     color: variaveis.$corTexto;
     text-decoration: underline;
+}
+
+.button {
+    border: none;
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variaveis.$corTexto;
+    background-color: #6421ff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 2vw;
+    margin-bottom: 8px;
+    cursor: pointer;
+    &:hover {
+        background-color: #4c00ff;
+        transition: all 0.4s;
+    }
+                
 }
