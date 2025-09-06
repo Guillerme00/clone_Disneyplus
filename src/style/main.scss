@@ -2,6 +2,7 @@
 @use '_hero';
 @use '_shows.scss';
 @use '_plans.scss';
+@use '_watch-anywhere';
 
 @font-face {
     font-family: Avenir;
@@ -32,7 +33,7 @@ body {
 }
 
 .text--big {
-    @include text(18px)
+    @include text(18px);
 }
 
 .text {
